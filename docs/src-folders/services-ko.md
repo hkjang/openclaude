@@ -5,6 +5,8 @@
 `src/services`는 OpenClaude의 도메인 서비스 계층입니다.  
 모델 API 호출, compact, MCP, analytics, session memory, plugin install, LSP, prompt suggestion 같은 실제 비즈니스 로직이 이 폴더에 모입니다.
 
+하위 폴더 단위 세부 문서는 [index-ko.md](D:/project/openclaude/docs/src-subfolders/services/index-ko.md)에서 확인할 수 있습니다.
+
 ## 핵심 특징
 
 - `query.ts`가 직접 호출하는 로직이 많습니다.

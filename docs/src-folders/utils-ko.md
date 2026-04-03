@@ -5,6 +5,8 @@
 `src/utils`는 OpenClaude 전역에서 재사용되는 인프라 계층입니다.  
 설정, 세션 저장, 메시지 변환, 권한 판정, subprocess 환경, 모델/provider 보조, plugin/skill 로딩, sandbox, telemetry, memory 보조 등 횡단 관심사가 이 폴더에 모입니다.
 
+하위 폴더 단위 세부 문서는 [index-ko.md](D:/project/openclaude/docs/src-subfolders/utils/index-ko.md)에서 확인할 수 있습니다.
+
 ## 성격
 
 - 저장소에서 가장 넓은 fan-out을 갖는 폴더입니다.

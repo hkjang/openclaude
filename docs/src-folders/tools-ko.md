@@ -5,6 +5,8 @@
 `src/tools`는 모델이 호출하는 모든 tool의 실제 구현체를 담습니다.  
 파일 읽기/쓰기, 셸 실행, 검색, MCP, agent spawn, task 제어, skill 호출, web fetch/search 같은 핵심 기능이 여기에 있습니다.
 
+하위 폴더 단위 세부 문서는 [index-ko.md](D:/project/openclaude/docs/src-subfolders/tools/index-ko.md)에서 확인할 수 있습니다.
+
 ## 공통 패턴
 
 대부분의 tool 폴더는 다음 패턴을 가집니다.

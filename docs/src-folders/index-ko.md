@@ -5,9 +5,12 @@
 이 문서는 `src` 최상위 폴더마다 따로 작성된 개별 문서의 인덱스입니다.  
 상위 요약 문서인 [openclaude-src-folder-reference-ko.md](D:/project/openclaude/docs/openclaude-src-folder-reference-ko.md)가 전체 지도를 제공한다면, 이 인덱스는 특정 폴더로 바로 들어가기 위한 문서 허브 역할을 합니다.
 
+`commands`, `services`, `tools`, `utils`는 하위 폴더 수가 많아서 별도 심화 인덱스 [index-ko.md](D:/project/openclaude/docs/src-subfolders/index-ko.md)로 한 단계 더 내려가도록 구성했습니다.
+
 ## 2. 읽기 가이드
 
 - 전체 구조를 먼저 보려면 [openclaude-src-folder-reference-ko.md](D:/project/openclaude/docs/openclaude-src-folder-reference-ko.md)
+- `commands/services/tools/utils` 하위 구조까지 보려면 [index-ko.md](D:/project/openclaude/docs/src-subfolders/index-ko.md)
 - 메모리/compact 계열을 보려면 [openclaude-memory-context-compaction-ko.md](D:/project/openclaude/docs/openclaude-memory-context-compaction-ko.md)
 - 특정 폴더를 바로 파고들려면 아래 개별 문서
 
@@ -66,12 +69,14 @@
 2. [tools-ko.md](D:/project/openclaude/docs/src-folders/tools-ko.md)
 3. [services-ko.md](D:/project/openclaude/docs/src-folders/services-ko.md)
 4. [utils-ko.md](D:/project/openclaude/docs/src-folders/utils-ko.md)
+5. [index-ko.md](D:/project/openclaude/docs/src-subfolders/index-ko.md)
 
 ### 메모리와 컨텍스트
 
 1. [memdir-ko.md](D:/project/openclaude/docs/src-folders/memdir-ko.md)
 2. [services-ko.md](D:/project/openclaude/docs/src-folders/services-ko.md)
 3. [openclaude-memory-context-compaction-ko.md](D:/project/openclaude/docs/openclaude-memory-context-compaction-ko.md)
+4. [index-ko.md](D:/project/openclaude/docs/src-subfolders/services/index-ko.md)
 
 ### 원격/브리지/서버
 

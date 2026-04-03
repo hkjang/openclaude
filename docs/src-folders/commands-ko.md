@@ -5,6 +5,8 @@
 `src/commands`는 slash command의 실제 구현 계층입니다.  
 사용자가 `/compact`, `/memory`, `/resume`, `/provider`처럼 입력하는 명령이 이 폴더 아래에서 구현되고, `src/commands.ts`가 이를 레지스트리로 묶습니다.
 
+하위 폴더 단위 세부 문서는 [index-ko.md](D:/project/openclaude/docs/src-subfolders/commands/index-ko.md)에서 확인할 수 있습니다.
+
 ## 대표 파일과 구조
 
 | 구분 | 설명 |

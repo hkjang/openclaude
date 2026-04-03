@@ -6,6 +6,7 @@
 기능 설명 수준이 아니라 “어떤 폴더가 어떤 책임을 갖고, 어느 파일이 진입점이며, 런타임에서 어디와 연결되는가”를 빠르게 파악할 수 있도록 작성합니다.
 
 폴더별 개별 문서는 [index-ko.md](D:/project/openclaude/docs/src-folders/index-ko.md)에서 확인할 수 있습니다.
+`commands`, `services`, `tools`, `utils` 하위 폴더 단위 심화 문서는 [index-ko.md](D:/project/openclaude/docs/src-subfolders/index-ko.md)에서 바로 내려갈 수 있습니다.
 
 이 문서는 다음 상황에서 바로 활용할 수 있습니다.
 
@@ -130,6 +131,8 @@ flowchart TD
 `src/commands`는 slash command 구현체 전체를 담는 폴더입니다.  
 `src/commands.ts`가 이 폴더의 public registry 역할을 하며, 일부 명령은 정적 import, 일부는 feature flag 또는 lazy import로 등록됩니다.
 
+하위 폴더별 상세 문서는 [index-ko.md](D:/project/openclaude/docs/src-subfolders/commands/index-ko.md)를 참조합니다.
+
 구조적 특징:
 
 - `index.ts`를 가진 하위 폴더형 명령과, 루트 direct file 명령이 혼재합니다.
@@ -245,6 +248,8 @@ flowchart TD
 
 ### 6.2 `src/services`
 
+하위 폴더별 상세 문서는 [index-ko.md](D:/project/openclaude/docs/src-subfolders/services/index-ko.md)를 참조합니다.
+
 `services`는 기능 중심 비즈니스 로직 계층입니다.  
 상대적으로 UI에서 분리되어 있고, `query.ts`, `commands`, `utils`가 이 계층을 호출합니다.
 
@@ -276,6 +281,8 @@ flowchart TD
 | `toolUseSummary` | `toolUseSummaryGenerator.ts` | tool usage summary 생성 |
 
 ### 6.3 `src/tools`
+
+하위 폴더별 상세 문서는 [index-ko.md](D:/project/openclaude/docs/src-subfolders/tools/index-ko.md)를 참조합니다.
 
 `tools`는 모델이 호출하는 기능 단위입니다.  
 각 tool은 보통 다음 파일 패턴을 가집니다.
@@ -344,6 +351,8 @@ tool 설계 공통 포인트:
 | `WorkflowTool` | `constants.ts` | workflow script 실행 계층 |
 
 ### 6.4 `src/utils`
+
+하위 폴더별 상세 문서는 [index-ko.md](D:/project/openclaude/docs/src-subfolders/utils/index-ko.md)를 참조합니다.
 
 `utils`는 저장소에서 가장 넓은 범용 기반 계층입니다.  
 설정, 세션 저장, 권한, subprocess, git, plugin, skill, model, message, sandbox, telemetry 등이 이 폴더에 모입니다.
