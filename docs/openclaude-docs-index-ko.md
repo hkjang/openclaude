@@ -9,6 +9,8 @@
 | 문서명 | 파일 | 대상 독자 | 활용 목적 |
 |---|---|---|---|
 | 한국어 개요 | [openclaude-overview-ko.md](D:/project/openclaude/docs/openclaude-overview-ko.md) | 전체 독자 | 가장 빠르게 제품 구조와 문서 체계를 파악 |
+| 코딩 에이전트 아키텍처 명세 | [coding-agent-architecture-spec-ko.md](D:/project/openclaude/docs/coding-agent-architecture-spec-ko.md) | 개발, AI 엔지니어, 플랫폼 엔지니어 | 코딩 에이전트 공통 구조와 기능 설계 기준 |
+| 코딩 에이전트 흐름/보안 명세 | [coding-agent-flow-security-spec-ko.md](D:/project/openclaude/docs/coding-agent-flow-security-spec-ko.md) | 개발, 플랫폼 엔지니어, DevOps, QA | 데이터 흐름, 보안, 오류 처리, 로그 기준 |
 | 종합 기능 명세서 | [openclaude-functional-spec-ko.md](D:/project/openclaude/docs/openclaude-functional-spec-ko.md) | 기획, 개발, QA, 운영 | 전체 기능 정의와 설계 기준 확인 |
 | 운영 매뉴얼 | [openclaude-operations-manual-ko.md](D:/project/openclaude/docs/openclaude-operations-manual-ko.md) | 운영, 개발, 고객지원 | 실제 사용 절차와 장애 대응 |
 | QA 테스트 케이스 | [openclaude-qa-test-cases-ko.md](D:/project/openclaude/docs/openclaude-qa-test-cases-ko.md) | QA, 개발 | 기능 검증 시나리오 수행 |
@@ -26,25 +28,34 @@
 
 ### 3.2 개발자
 
-1. 종합 기능 명세서
-2. API/연동 명세
-3. 화면별 상세 기획서
-4. QA 테스트 케이스
+1. 코딩 에이전트 아키텍처 명세
+2. 코딩 에이전트 흐름/보안 명세
+3. 종합 기능 명세서
+4. API/연동 명세
+5. 화면별 상세 기획서
+6. QA 테스트 케이스
 
-### 3.3 QA
+### 3.3 AI 엔지니어 / 플랫폼 엔지니어
+
+1. 코딩 에이전트 아키텍처 명세
+2. 코딩 에이전트 흐름/보안 명세
+3. 종합 기능 명세서
+4. API/연동 명세
+
+### 3.4 QA
 
 1. 종합 기능 명세서
 2. QA 테스트 케이스
 3. QA Import CSV
 4. 운영 매뉴얼
 
-### 3.4 운영/고객지원
+### 3.5 운영/고객지원
 
 1. 운영 매뉴얼
 2. 종합 기능 명세서
 3. API/연동 명세
 
-### 3.5 처음 읽는 사용자
+### 3.6 처음 읽는 사용자
 
 1. 한국어 개요
 2. 문서 인덱스
@@ -58,6 +69,7 @@
 | 종합 기능 명세서 | QA 테스트 케이스 | 기능별 검증 포인트를 테스트 케이스로 구체화 |
 | 종합 기능 명세서 | API/연동 명세 | 외부 시스템 통신만 분리 정리 |
 | 종합 기능 명세서 | 화면별 상세 기획서 | 대화형/설정형 UI를 화면 기준으로 재구성 |
+| 코딩 에이전트 아키텍처 명세 | 코딩 에이전트 흐름/보안 명세 | 공통 아키텍처를 데이터 흐름과 보안 기준으로 세분화 |
 | QA 테스트 케이스 | QA Import CSV | 동일 케이스를 테스트관리도구 적재 형식으로 평탄화 |
 
 ## 5. 문서 유지보수 원칙

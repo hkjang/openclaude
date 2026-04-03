@@ -93,6 +93,8 @@ Korean documentation set:
 - [Korean Docs Index](docs/openclaude-docs-index-ko.md)
 - [Korean Overview](docs/openclaude-overview-ko.md)
 - [Korean Functional Spec](docs/openclaude-functional-spec-ko.md)
+- [Korean Coding Agent Architecture Spec](docs/coding-agent-architecture-spec-ko.md)
+- [Korean Coding Agent Flow and Security Spec](docs/coding-agent-flow-security-spec-ko.md)
 
 Advanced and source-build guides:
 
