@@ -96,6 +96,8 @@ Korean documentation set:
 - [Korean `src` Folder Code Reference](docs/openclaude-src-folder-reference-ko.md)
 - [Korean `src` Folder Docs Index](docs/src-folders/index-ko.md)
 - [Korean `commands/services/tools/utils` Subfolder Docs Index](docs/src-subfolders/index-ko.md)
+- [Korean API Guide](docs/openclaude-api-guide-ko.md)
+- [Korean Server Mode Guide](docs/openclaude-server-mode-guide-ko.md)
 - [Korean Plugin and Hook Guide](docs/openclaude-plugin-hook-guide-ko.md)
 - [Korean Memory and Context Compaction Spec](docs/openclaude-memory-context-compaction-ko.md)
 - [Korean Coding Agent Architecture Spec](docs/coding-agent-architecture-spec-ko.md)

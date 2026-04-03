@@ -14,6 +14,8 @@
 | `src` 폴더 코드 레퍼런스 | [openclaude-src-folder-reference-ko.md](D:/project/openclaude/docs/openclaude-src-folder-reference-ko.md) | 개발, AI 엔지니어, 플랫폼 엔지니어, QA | `src` 전체 폴더 구조와 대표 엔트리 파일, 책임 범위 파악 |
 | `src` 폴더별 문서 인덱스 | [index-ko.md](D:/project/openclaude/docs/src-folders/index-ko.md) | 개발, AI 엔지니어, 플랫폼 엔지니어, QA | `src` 최상위 폴더별 개별 문서 진입점 |
 | `commands/services/tools/utils` 하위 폴더 문서 인덱스 | [index-ko.md](D:/project/openclaude/docs/src-subfolders/index-ko.md) | 개발, AI 엔지니어, 플랫폼 엔지니어, QA | `commands`, `services`, `tools`, `utils` 하위 폴더별 상세 문서 진입점 |
+| API 가이드 | [openclaude-api-guide-ko.md](D:/project/openclaude/docs/openclaude-api-guide-ko.md) | 개발, AI 엔지니어, 플랫폼 엔지니어, QA | provider 선택, 요청 변환, 스트리밍, 재시도, files/session API를 소스 기준으로 정리 |
+| 서버 기동 가이드 | [openclaude-server-mode-guide-ko.md](D:/project/openclaude/docs/openclaude-server-mode-guide-ko.md) | 개발, 플랫폼 엔지니어, DevOps, QA | direct connect 서버 기동 방법, 연결 방식, remote-control과의 차이, 보안 주의사항 정리 |
 | 플러그인 및 훅 추가 가이드 | [openclaude-plugin-hook-guide-ko.md](D:/project/openclaude/docs/openclaude-plugin-hook-guide-ko.md) | 개발, AI 엔지니어, 플랫폼 엔지니어, QA | 플러그인 구조, 훅 실행 방식, 추가 절차, 디버깅 포인트를 소스 기준으로 정리 |
 | 메모리/컨텍스트 압축 상세 설계 | [openclaude-memory-context-compaction-ko.md](D:/project/openclaude/docs/openclaude-memory-context-compaction-ko.md) | 개발, AI 엔지니어, 플랫폼 엔지니어, QA | 메모리 계층, session memory, compact, resume 복원 구조 파악 |
 | 코딩 에이전트 아키텍처 명세 | [coding-agent-architecture-spec-ko.md](D:/project/openclaude/docs/coding-agent-architecture-spec-ko.md) | 개발, AI 엔지니어, 플랫폼 엔지니어 | 코딩 에이전트 공통 구조와 내부 모듈 설계 기준 |
@@ -40,10 +42,12 @@
 3. [openclaude-src-folder-reference-ko.md](D:/project/openclaude/docs/openclaude-src-folder-reference-ko.md)
 4. [index-ko.md](D:/project/openclaude/docs/src-folders/index-ko.md)
 5. [index-ko.md](D:/project/openclaude/docs/src-subfolders/index-ko.md)
-6. [openclaude-plugin-hook-guide-ko.md](D:/project/openclaude/docs/openclaude-plugin-hook-guide-ko.md)
-7. [openclaude-memory-context-compaction-ko.md](D:/project/openclaude/docs/openclaude-memory-context-compaction-ko.md)
-8. [openclaude-functional-spec-ko.md](D:/project/openclaude/docs/openclaude-functional-spec-ko.md)
-9. [openclaude-api-integration-spec-ko.md](D:/project/openclaude/docs/openclaude-api-integration-spec-ko.md)
+6. [openclaude-api-guide-ko.md](D:/project/openclaude/docs/openclaude-api-guide-ko.md)
+7. [openclaude-server-mode-guide-ko.md](D:/project/openclaude/docs/openclaude-server-mode-guide-ko.md)
+8. [openclaude-plugin-hook-guide-ko.md](D:/project/openclaude/docs/openclaude-plugin-hook-guide-ko.md)
+9. [openclaude-memory-context-compaction-ko.md](D:/project/openclaude/docs/openclaude-memory-context-compaction-ko.md)
+10. [openclaude-functional-spec-ko.md](D:/project/openclaude/docs/openclaude-functional-spec-ko.md)
+11. [openclaude-api-integration-spec-ko.md](D:/project/openclaude/docs/openclaude-api-integration-spec-ko.md)
 
 ### 3.3 AI 엔지니어 / 플랫폼 엔지니어
 
@@ -52,9 +56,11 @@
 3. [openclaude-src-folder-reference-ko.md](D:/project/openclaude/docs/openclaude-src-folder-reference-ko.md)
 4. [index-ko.md](D:/project/openclaude/docs/src-folders/index-ko.md)
 5. [index-ko.md](D:/project/openclaude/docs/src-subfolders/index-ko.md)
-6. [openclaude-plugin-hook-guide-ko.md](D:/project/openclaude/docs/openclaude-plugin-hook-guide-ko.md)
-7. [openclaude-memory-context-compaction-ko.md](D:/project/openclaude/docs/openclaude-memory-context-compaction-ko.md)
-8. [openclaude-api-integration-spec-ko.md](D:/project/openclaude/docs/openclaude-api-integration-spec-ko.md)
+6. [openclaude-api-guide-ko.md](D:/project/openclaude/docs/openclaude-api-guide-ko.md)
+7. [openclaude-server-mode-guide-ko.md](D:/project/openclaude/docs/openclaude-server-mode-guide-ko.md)
+8. [openclaude-plugin-hook-guide-ko.md](D:/project/openclaude/docs/openclaude-plugin-hook-guide-ko.md)
+9. [openclaude-memory-context-compaction-ko.md](D:/project/openclaude/docs/openclaude-memory-context-compaction-ko.md)
+10. [openclaude-api-integration-spec-ko.md](D:/project/openclaude/docs/openclaude-api-integration-spec-ko.md)
 
 ### 3.4 QA
 
@@ -93,6 +99,8 @@
 - 실제 폴더 구조나 대표 진입 파일, 모듈 책임이 바뀌면 [openclaude-src-folder-reference-ko.md](D:/project/openclaude/docs/openclaude-src-folder-reference-ko.md)를 갱신합니다.
 - 특정 최상위 폴더 내부 구조가 달라지면 대응하는 `docs/src-folders/*.md`도 함께 갱신합니다.
 - `commands`, `services`, `tools`, `utils` 하위 폴더 구조가 달라지면 [index-ko.md](D:/project/openclaude/docs/src-subfolders/index-ko.md)와 대응하는 `docs/src-subfolders/<group>/*.md`를 함께 갱신합니다.
+- provider 선택 규칙, shim 구조, bootstrap/files/session ingress 같은 API 구현 규칙이 바뀌면 [openclaude-api-guide-ko.md](D:/project/openclaude/docs/openclaude-api-guide-ko.md)를 갱신합니다.
+- direct connect server, `cc://` 연결 흐름, `remote-control` 구분 기준이 바뀌면 [openclaude-server-mode-guide-ko.md](D:/project/openclaude/docs/openclaude-server-mode-guide-ko.md)를 갱신합니다.
 - 플러그인 구조, manifest 스키마, 훅 실행 규칙이 바뀌면 [openclaude-plugin-hook-guide-ko.md](D:/project/openclaude/docs/openclaude-plugin-hook-guide-ko.md)를 갱신합니다.
 - 메모리, 세션 유지, compact, resume 구조가 바뀌면 [openclaude-memory-context-compaction-ko.md](D:/project/openclaude/docs/openclaude-memory-context-compaction-ko.md)를 갱신합니다.
 - 아키텍처나 실행 흐름이 바뀌면 코딩 에이전트 아키텍처/흐름 문서를 함께 갱신합니다.
