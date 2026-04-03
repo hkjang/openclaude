@@ -2,90 +2,103 @@
 
 ## 1. 문서 개요
 
-이 문서는 OpenClaude 한국어 문서 세트의 진입점이다. 기능 정의, 운영 절차, QA 검증, API/연동, 화면 기획 문서를 역할별로 빠르게 찾을 수 있도록 정리한다.
+이 문서는 OpenClaude 한국어 문서 묶음의 진입점입니다.  
+기능 정의, 아키텍처, 메모리와 컨텍스트 압축, 운영 절차, QA 검증, API 연동, 화면 기획 문서를 역할별로 빠르게 찾을 수 있도록 정리합니다.
 
 ## 2. 문서 목록
 
-| 문서명 | 파일 | 대상 독자 | 활용 목적 |
+| 문서명 | 파일 | 주요 독자 | 사용 목적 |
 |---|---|---|---|
-| 한국어 개요 | [openclaude-overview-ko.md](D:/project/openclaude/docs/openclaude-overview-ko.md) | 전체 독자 | 가장 빠르게 제품 구조와 문서 체계를 파악 |
-| 코딩 에이전트 아키텍처 명세 | [coding-agent-architecture-spec-ko.md](D:/project/openclaude/docs/coding-agent-architecture-spec-ko.md) | 개발, AI 엔지니어, 플랫폼 엔지니어 | 코딩 에이전트 공통 구조와 기능 설계 기준 |
+| 제품 개요 | [openclaude-overview-ko.md](D:/project/openclaude/docs/openclaude-overview-ko.md) | 전체 독자 | 제품 구조와 문서 체계를 빠르게 파악 |
+| 종합 기능 명세서 | [openclaude-functional-spec-ko.md](D:/project/openclaude/docs/openclaude-functional-spec-ko.md) | 기획, 개발, QA, 운영 | 전체 기능 정의와 동작 기준 확인 |
+| `src` 폴더 코드 레퍼런스 | [openclaude-src-folder-reference-ko.md](D:/project/openclaude/docs/openclaude-src-folder-reference-ko.md) | 개발, AI 엔지니어, 플랫폼 엔지니어, QA | `src` 전체 폴더 구조와 대표 엔트리 파일, 책임 범위 파악 |
+| `src` 폴더별 문서 인덱스 | [index-ko.md](D:/project/openclaude/docs/src-folders/index-ko.md) | 개발, AI 엔지니어, 플랫폼 엔지니어, QA | `src` 최상위 폴더별 개별 문서 진입점 |
+| 메모리/컨텍스트 압축 상세 설계 | [openclaude-memory-context-compaction-ko.md](D:/project/openclaude/docs/openclaude-memory-context-compaction-ko.md) | 개발, AI 엔지니어, 플랫폼 엔지니어, QA | 메모리 계층, session memory, compact, resume 복원 구조 파악 |
+| 코딩 에이전트 아키텍처 명세 | [coding-agent-architecture-spec-ko.md](D:/project/openclaude/docs/coding-agent-architecture-spec-ko.md) | 개발, AI 엔지니어, 플랫폼 엔지니어 | 코딩 에이전트 공통 구조와 내부 모듈 설계 기준 |
 | 코딩 에이전트 흐름/보안 명세 | [coding-agent-flow-security-spec-ko.md](D:/project/openclaude/docs/coding-agent-flow-security-spec-ko.md) | 개발, 플랫폼 엔지니어, DevOps, QA | 데이터 흐름, 보안, 오류 처리, 로그 기준 |
-| 종합 기능 명세서 | [openclaude-functional-spec-ko.md](D:/project/openclaude/docs/openclaude-functional-spec-ko.md) | 기획, 개발, QA, 운영 | 전체 기능 정의와 설계 기준 확인 |
-| 운영 매뉴얼 | [openclaude-operations-manual-ko.md](D:/project/openclaude/docs/openclaude-operations-manual-ko.md) | 운영, 개발, 고객지원 | 실제 사용 절차와 장애 대응 |
-| QA 테스트 케이스 | [openclaude-qa-test-cases-ko.md](D:/project/openclaude/docs/openclaude-qa-test-cases-ko.md) | QA, 개발 | 기능 검증 시나리오 수행 |
-| QA Import CSV | [openclaude-qa-test-cases-import-ko.csv](D:/project/openclaude/docs/openclaude-qa-test-cases-import-ko.csv) | QA, 운영도구 관리자 | 엑셀/테스트관리도구 업로드 |
-| API/연동 명세 | [openclaude-api-integration-spec-ko.md](D:/project/openclaude/docs/openclaude-api-integration-spec-ko.md) | 개발, 운영 | 외부 시스템 연동 설계와 장애 분석 |
-| 화면별 상세 기획서 | [openclaude-screen-spec-ko.md](D:/project/openclaude/docs/openclaude-screen-spec-ko.md) | 기획, 디자인, 개발, QA | 화면 단위 UX/상태/검증 기준 확인 |
+| API/연동 명세 | [openclaude-api-integration-spec-ko.md](D:/project/openclaude/docs/openclaude-api-integration-spec-ko.md) | 개발, 운영 | 외부 연동 구조, 요청/응답, 실패 처리 기준 |
+| 화면별 상세 기획서 | [openclaude-screen-spec-ko.md](D:/project/openclaude/docs/openclaude-screen-spec-ko.md) | 기획, 디자이너, 개발, QA | 화면 단위 UX, 상태, 검증 기준 확인 |
+| 운영 매뉴얼 | [openclaude-operations-manual-ko.md](D:/project/openclaude/docs/openclaude-operations-manual-ko.md) | 운영, 개발, 고객지원 | 실제 운영 절차와 대응 기준 |
+| QA 테스트 케이스 | [openclaude-qa-test-cases-ko.md](D:/project/openclaude/docs/openclaude-qa-test-cases-ko.md) | QA, 개발 | 기능별 검증 시나리오 수행 |
+| QA Import CSV | [openclaude-qa-test-cases-import-ko.csv](D:/project/openclaude/docs/openclaude-qa-test-cases-import-ko.csv) | QA 도구 관리자 | 테스트 관리 도구 적재용 데이터 |
 
 ## 3. 역할별 추천 읽기 순서
 
 ### 3.1 기획자
 
-1. 종합 기능 명세서
-2. 화면별 상세 기획서
-3. 운영 매뉴얼
+1. [openclaude-overview-ko.md](D:/project/openclaude/docs/openclaude-overview-ko.md)
+2. [openclaude-functional-spec-ko.md](D:/project/openclaude/docs/openclaude-functional-spec-ko.md)
+3. [openclaude-screen-spec-ko.md](D:/project/openclaude/docs/openclaude-screen-spec-ko.md)
+4. [openclaude-operations-manual-ko.md](D:/project/openclaude/docs/openclaude-operations-manual-ko.md)
 
 ### 3.2 개발자
 
-1. 코딩 에이전트 아키텍처 명세
-2. 코딩 에이전트 흐름/보안 명세
-3. 종합 기능 명세서
-4. API/연동 명세
-5. 화면별 상세 기획서
-6. QA 테스트 케이스
+1. [coding-agent-architecture-spec-ko.md](D:/project/openclaude/docs/coding-agent-architecture-spec-ko.md)
+2. [coding-agent-flow-security-spec-ko.md](D:/project/openclaude/docs/coding-agent-flow-security-spec-ko.md)
+3. [openclaude-src-folder-reference-ko.md](D:/project/openclaude/docs/openclaude-src-folder-reference-ko.md)
+4. [index-ko.md](D:/project/openclaude/docs/src-folders/index-ko.md)
+5. [openclaude-memory-context-compaction-ko.md](D:/project/openclaude/docs/openclaude-memory-context-compaction-ko.md)
+6. [openclaude-functional-spec-ko.md](D:/project/openclaude/docs/openclaude-functional-spec-ko.md)
+7. [openclaude-api-integration-spec-ko.md](D:/project/openclaude/docs/openclaude-api-integration-spec-ko.md)
 
 ### 3.3 AI 엔지니어 / 플랫폼 엔지니어
 
-1. 코딩 에이전트 아키텍처 명세
-2. 코딩 에이전트 흐름/보안 명세
-3. 종합 기능 명세서
-4. API/연동 명세
+1. [coding-agent-architecture-spec-ko.md](D:/project/openclaude/docs/coding-agent-architecture-spec-ko.md)
+2. [coding-agent-flow-security-spec-ko.md](D:/project/openclaude/docs/coding-agent-flow-security-spec-ko.md)
+3. [openclaude-src-folder-reference-ko.md](D:/project/openclaude/docs/openclaude-src-folder-reference-ko.md)
+4. [index-ko.md](D:/project/openclaude/docs/src-folders/index-ko.md)
+5. [openclaude-memory-context-compaction-ko.md](D:/project/openclaude/docs/openclaude-memory-context-compaction-ko.md)
+6. [openclaude-api-integration-spec-ko.md](D:/project/openclaude/docs/openclaude-api-integration-spec-ko.md)
 
 ### 3.4 QA
 
-1. 종합 기능 명세서
-2. QA 테스트 케이스
-3. QA Import CSV
-4. 운영 매뉴얼
+1. [openclaude-functional-spec-ko.md](D:/project/openclaude/docs/openclaude-functional-spec-ko.md)
+2. [openclaude-src-folder-reference-ko.md](D:/project/openclaude/docs/openclaude-src-folder-reference-ko.md)
+3. [index-ko.md](D:/project/openclaude/docs/src-folders/index-ko.md)
+4. [openclaude-memory-context-compaction-ko.md](D:/project/openclaude/docs/openclaude-memory-context-compaction-ko.md)
+5. [openclaude-qa-test-cases-ko.md](D:/project/openclaude/docs/openclaude-qa-test-cases-ko.md)
+6. [openclaude-qa-test-cases-import-ko.csv](D:/project/openclaude/docs/openclaude-qa-test-cases-import-ko.csv)
 
-### 3.5 운영/고객지원
+### 3.5 운영 / 고객지원
 
-1. 운영 매뉴얼
-2. 종합 기능 명세서
-3. API/연동 명세
-
-### 3.6 처음 읽는 사용자
-
-1. 한국어 개요
-2. 문서 인덱스
-3. 운영 매뉴얼 또는 종합 기능 명세서
+1. [openclaude-overview-ko.md](D:/project/openclaude/docs/openclaude-overview-ko.md)
+2. [openclaude-operations-manual-ko.md](D:/project/openclaude/docs/openclaude-operations-manual-ko.md)
+3. [openclaude-functional-spec-ko.md](D:/project/openclaude/docs/openclaude-functional-spec-ko.md)
+4. [openclaude-api-integration-spec-ko.md](D:/project/openclaude/docs/openclaude-api-integration-spec-ko.md)
 
 ## 4. 문서 간 관계
 
 | 기준 문서 | 파생 문서 | 관계 설명 |
 |---|---|---|
+| 제품 개요 | 전체 문서 세트 | 전체 문서의 역할과 읽기 순서 안내 |
 | 종합 기능 명세서 | 운영 매뉴얼 | 기능 정의를 실제 운영 절차로 변환 |
-| 종합 기능 명세서 | QA 테스트 케이스 | 기능별 검증 포인트를 테스트 케이스로 구체화 |
-| 종합 기능 명세서 | API/연동 명세 | 외부 시스템 통신만 분리 정리 |
-| 종합 기능 명세서 | 화면별 상세 기획서 | 대화형/설정형 UI를 화면 기준으로 재구성 |
-| 코딩 에이전트 아키텍처 명세 | 코딩 에이전트 흐름/보안 명세 | 공통 아키텍처를 데이터 흐름과 보안 기준으로 세분화 |
-| QA 테스트 케이스 | QA Import CSV | 동일 케이스를 테스트관리도구 적재 형식으로 평탄화 |
+| 종합 기능 명세서 | QA 테스트 케이스 | 기능 정의를 검증 시나리오로 분해 |
+| 종합 기능 명세서 | API/연동 명세 | 외부 통신 관점으로 상세화 |
+| 종합 기능 명세서 | 화면별 상세 기획서 | 화면 UX와 상태 설계로 세분화 |
+| `src` 폴더 코드 레퍼런스 | 기능 명세서, 메모리/컨텍스트 압축 상세 설계 | 실제 구현 폴더와 진입 파일 관점에서 코드 탐색을 보조 |
+| `src` 폴더별 문서 인덱스 | 각 최상위 폴더 문서 | 특정 폴더의 코드 구조를 개별 문서로 탐색 |
+| 코딩 에이전트 아키텍처 명세 | 흐름/보안 명세 | 아키텍처를 데이터 흐름, 보안, 예외 처리 관점으로 분리 |
+| 메모리/컨텍스트 압축 상세 설계 | 기능 명세, 운영 매뉴얼, QA | 메모리와 compact 관련 구현 및 검증 기준 보강 |
 
-## 5. 문서 유지보수 원칙
+## 5. 유지보수 원칙
 
-- 기능 변경 시 가장 먼저 종합 기능 명세서를 갱신한다.
-- UI 변경 시 화면별 상세 기획서를 함께 수정한다.
-- 외부 연동 정책, 인증, timeout, retry 변경 시 API/연동 명세를 갱신한다.
-- 회귀 테스트 범위가 바뀌면 QA 테스트 케이스와 CSV를 동시에 갱신한다.
-- 운영 절차가 바뀌면 운영 매뉴얼과 고객지원 템플릿을 함께 수정한다.
+- 기능이 바뀌면 먼저 [openclaude-functional-spec-ko.md](D:/project/openclaude/docs/openclaude-functional-spec-ko.md)를 갱신합니다.
+- 실제 폴더 구조나 대표 진입 파일, 모듈 책임이 바뀌면 [openclaude-src-folder-reference-ko.md](D:/project/openclaude/docs/openclaude-src-folder-reference-ko.md)를 갱신합니다.
+- 특정 최상위 폴더 내부 구조가 달라지면 대응하는 `docs/src-folders/*.md`도 함께 갱신합니다.
+- 메모리, 세션 유지, compact, resume 구조가 바뀌면 [openclaude-memory-context-compaction-ko.md](D:/project/openclaude/docs/openclaude-memory-context-compaction-ko.md)를 갱신합니다.
+- 아키텍처나 실행 흐름이 바뀌면 코딩 에이전트 아키텍처/흐름 문서를 함께 갱신합니다.
+- UI 변경이 있으면 화면별 상세 기획서를 갱신합니다.
+- 운영 절차나 장애 대응 기준이 바뀌면 운영 매뉴얼을 갱신합니다.
+- 테스트 범위가 바뀌면 QA 문서와 CSV를 함께 갱신합니다.
 
-## 6. 변경 시 우선 점검 문서
+## 6. 변경 유형별 우선 갱신 문서
 
 | 변경 유형 | 우선 수정 문서 |
 |---|---|
-| 신규 슬래시 명령 추가 | 종합 기능 명세서, 화면별 상세 기획서, QA 테스트 케이스 |
-| 인증 방식 변경 | 종합 기능 명세서, API/연동 명세, 운영 매뉴얼 |
-| 설정 화면 변경 | 화면별 상세 기획서, 운영 매뉴얼, QA 테스트 케이스 |
-| MCP/플러그인 구조 변경 | 종합 기능 명세서, API/연동 명세, 운영 매뉴얼 |
-| 배경 작업/스케줄링 변경 | 종합 기능 명세서, 운영 매뉴얼, QA 테스트 케이스 |
+| 새 기능 추가 | 종합 기능 명세서, 화면별 상세 기획서, QA 테스트 케이스 |
+| 폴더 구조/모듈 책임 변경 | `src` 폴더 코드 레퍼런스, 코딩 에이전트 아키텍처 명세 |
+| 메모리/세션/compact 변경 | 메모리/컨텍스트 압축 상세 설계, 기능 명세서, QA 테스트 케이스 |
+| 권한/보안 정책 변경 | 흐름/보안 명세, 운영 매뉴얼 |
+| API 계약 변경 | API/연동 명세, 기능 명세서 |
+| 운영 절차 변경 | 운영 매뉴얼, 기능 명세서 |
+| 내부 아키텍처 리팩토링 | 코딩 에이전트 아키텍처 명세, 흐름/보안 명세 |
