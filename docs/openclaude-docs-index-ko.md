@@ -8,6 +8,7 @@
 
 | 문서명 | 파일 | 대상 독자 | 활용 목적 |
 |---|---|---|---|
+| 한국어 개요 | [openclaude-overview-ko.md](D:/project/openclaude/docs/openclaude-overview-ko.md) | 전체 독자 | 가장 빠르게 제품 구조와 문서 체계를 파악 |
 | 종합 기능 명세서 | [openclaude-functional-spec-ko.md](D:/project/openclaude/docs/openclaude-functional-spec-ko.md) | 기획, 개발, QA, 운영 | 전체 기능 정의와 설계 기준 확인 |
 | 운영 매뉴얼 | [openclaude-operations-manual-ko.md](D:/project/openclaude/docs/openclaude-operations-manual-ko.md) | 운영, 개발, 고객지원 | 실제 사용 절차와 장애 대응 |
 | QA 테스트 케이스 | [openclaude-qa-test-cases-ko.md](D:/project/openclaude/docs/openclaude-qa-test-cases-ko.md) | QA, 개발 | 기능 검증 시나리오 수행 |
@@ -42,6 +43,12 @@
 1. 운영 매뉴얼
 2. 종합 기능 명세서
 3. API/연동 명세
+
+### 3.5 처음 읽는 사용자
+
+1. 한국어 개요
+2. 문서 인덱스
+3. 운영 매뉴얼 또는 종합 기능 명세서
 
 ## 4. 문서 간 관계
 

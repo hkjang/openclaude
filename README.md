@@ -88,6 +88,12 @@ Beginner-friendly guides:
 - [Windows Quick Start](docs/quick-start-windows.md)
 - [macOS / Linux Quick Start](docs/quick-start-mac-linux.md)
 
+Korean documentation set:
+
+- [Korean Docs Index](docs/openclaude-docs-index-ko.md)
+- [Korean Overview](docs/openclaude-overview-ko.md)
+- [Korean Functional Spec](docs/openclaude-functional-spec-ko.md)
+
 Advanced and source-build guides:
 
 - [Advanced Setup](docs/advanced-setup.md)
