@@ -19,6 +19,9 @@
 | Feature Flag / 빌드 가이드 | [openclaude-feature-flag-build-guide-ko.md](D:/project/openclaude/docs/openclaude-feature-flag-build-guide-ko.md) | 개발, AI 엔지니어, 플랫폼 엔지니어, DevOps | 오픈 빌드에서 feature gate가 어떻게 제거되는지, 내부 기능과 공개 기능이 어떻게 갈리는지 정리 |
 | Remote Control / Bridge 가이드 | [openclaude-remote-control-bridge-guide-ko.md](D:/project/openclaude/docs/openclaude-remote-control-bridge-guide-ko.md) | 개발, 플랫폼 엔지니어, DevOps, QA | remote-control 구조, standalone/REPL 경로, bridge 세션 API, server와의 차이 정리 |
 | 인증 / 자격증명 가이드 | [openclaude-auth-credential-guide-ko.md](D:/project/openclaude/docs/openclaude-auth-credential-guide-ko.md) | 개발, AI 엔지니어, 플랫폼 엔지니어, 운영 | provider별 인증 소스, OAuth/API key 우선순위, auth.json/secure storage 동작 정리 |
+| 환경변수 / 설정 키 레퍼런스 | [openclaude-env-settings-reference-ko.md](D:/project/openclaude/docs/openclaude-env-settings-reference-ko.md) | 개발, 플랫폼 엔지니어, DevOps, 운영 | settings 소스 우선순위, 주요 settings.json 키, 핵심 환경변수 사용 기준 정리 |
+| 명령어 실전 가이드 | [openclaude-command-cookbook-ko.md](D:/project/openclaude/docs/openclaude-command-cookbook-ko.md) | 개발, QA, 운영 | REPL slash command, CLI flags, subcommand, feature-gated 명령 구조와 사용 시나리오 정리 |
+| 권한 / 보안 매트릭스 | [openclaude-permission-security-matrix-ko.md](D:/project/openclaude/docs/openclaude-permission-security-matrix-ko.md) | 개발, 플랫폼 엔지니어, QA, 운영 | 권한 모드, 경로 보호, 관리형 정책, remote 제약을 표 중심으로 정리 |
 | 트러블슈팅 가이드 | [openclaude-troubleshooting-guide-ko.md](D:/project/openclaude/docs/openclaude-troubleshooting-guide-ko.md) | 개발, QA, 운영, DevOps | 빌드/인증/네트워크/remote-control/server 증상을 기준으로 빠른 대응 경로 정리 |
 | 플러그인 및 훅 추가 가이드 | [openclaude-plugin-hook-guide-ko.md](D:/project/openclaude/docs/openclaude-plugin-hook-guide-ko.md) | 개발, AI 엔지니어, 플랫폼 엔지니어, QA | 플러그인 구조, 훅 실행 방식, 추가 절차, 디버깅 포인트를 소스 기준으로 정리 |
 | 메모리/컨텍스트 압축 상세 설계 | [openclaude-memory-context-compaction-ko.md](D:/project/openclaude/docs/openclaude-memory-context-compaction-ko.md) | 개발, AI 엔지니어, 플랫폼 엔지니어, QA | 메모리 계층, session memory, compact, resume 복원 구조 파악 |
@@ -50,12 +53,15 @@
 7. [openclaude-server-mode-guide-ko.md](D:/project/openclaude/docs/openclaude-server-mode-guide-ko.md)
 8. [openclaude-feature-flag-build-guide-ko.md](D:/project/openclaude/docs/openclaude-feature-flag-build-guide-ko.md)
 9. [openclaude-auth-credential-guide-ko.md](D:/project/openclaude/docs/openclaude-auth-credential-guide-ko.md)
-10. [openclaude-remote-control-bridge-guide-ko.md](D:/project/openclaude/docs/openclaude-remote-control-bridge-guide-ko.md)
-11. [openclaude-plugin-hook-guide-ko.md](D:/project/openclaude/docs/openclaude-plugin-hook-guide-ko.md)
-12. [openclaude-memory-context-compaction-ko.md](D:/project/openclaude/docs/openclaude-memory-context-compaction-ko.md)
-13. [openclaude-troubleshooting-guide-ko.md](D:/project/openclaude/docs/openclaude-troubleshooting-guide-ko.md)
-14. [openclaude-functional-spec-ko.md](D:/project/openclaude/docs/openclaude-functional-spec-ko.md)
-15. [openclaude-api-integration-spec-ko.md](D:/project/openclaude/docs/openclaude-api-integration-spec-ko.md)
+10. [openclaude-env-settings-reference-ko.md](D:/project/openclaude/docs/openclaude-env-settings-reference-ko.md)
+11. [openclaude-command-cookbook-ko.md](D:/project/openclaude/docs/openclaude-command-cookbook-ko.md)
+12. [openclaude-permission-security-matrix-ko.md](D:/project/openclaude/docs/openclaude-permission-security-matrix-ko.md)
+13. [openclaude-remote-control-bridge-guide-ko.md](D:/project/openclaude/docs/openclaude-remote-control-bridge-guide-ko.md)
+14. [openclaude-plugin-hook-guide-ko.md](D:/project/openclaude/docs/openclaude-plugin-hook-guide-ko.md)
+15. [openclaude-memory-context-compaction-ko.md](D:/project/openclaude/docs/openclaude-memory-context-compaction-ko.md)
+16. [openclaude-troubleshooting-guide-ko.md](D:/project/openclaude/docs/openclaude-troubleshooting-guide-ko.md)
+17. [openclaude-functional-spec-ko.md](D:/project/openclaude/docs/openclaude-functional-spec-ko.md)
+18. [openclaude-api-integration-spec-ko.md](D:/project/openclaude/docs/openclaude-api-integration-spec-ko.md)
 
 ### 3.3 AI 엔지니어 / 플랫폼 엔지니어
 
@@ -68,11 +74,14 @@
 7. [openclaude-server-mode-guide-ko.md](D:/project/openclaude/docs/openclaude-server-mode-guide-ko.md)
 8. [openclaude-feature-flag-build-guide-ko.md](D:/project/openclaude/docs/openclaude-feature-flag-build-guide-ko.md)
 9. [openclaude-auth-credential-guide-ko.md](D:/project/openclaude/docs/openclaude-auth-credential-guide-ko.md)
-10. [openclaude-remote-control-bridge-guide-ko.md](D:/project/openclaude/docs/openclaude-remote-control-bridge-guide-ko.md)
-11. [openclaude-plugin-hook-guide-ko.md](D:/project/openclaude/docs/openclaude-plugin-hook-guide-ko.md)
-12. [openclaude-memory-context-compaction-ko.md](D:/project/openclaude/docs/openclaude-memory-context-compaction-ko.md)
-13. [openclaude-troubleshooting-guide-ko.md](D:/project/openclaude/docs/openclaude-troubleshooting-guide-ko.md)
-14. [openclaude-api-integration-spec-ko.md](D:/project/openclaude/docs/openclaude-api-integration-spec-ko.md)
+10. [openclaude-env-settings-reference-ko.md](D:/project/openclaude/docs/openclaude-env-settings-reference-ko.md)
+11. [openclaude-command-cookbook-ko.md](D:/project/openclaude/docs/openclaude-command-cookbook-ko.md)
+12. [openclaude-permission-security-matrix-ko.md](D:/project/openclaude/docs/openclaude-permission-security-matrix-ko.md)
+13. [openclaude-remote-control-bridge-guide-ko.md](D:/project/openclaude/docs/openclaude-remote-control-bridge-guide-ko.md)
+14. [openclaude-plugin-hook-guide-ko.md](D:/project/openclaude/docs/openclaude-plugin-hook-guide-ko.md)
+15. [openclaude-memory-context-compaction-ko.md](D:/project/openclaude/docs/openclaude-memory-context-compaction-ko.md)
+16. [openclaude-troubleshooting-guide-ko.md](D:/project/openclaude/docs/openclaude-troubleshooting-guide-ko.md)
+17. [openclaude-api-integration-spec-ko.md](D:/project/openclaude/docs/openclaude-api-integration-spec-ko.md)
 
 ### 3.4 QA
 
@@ -80,10 +89,12 @@
 2. [openclaude-src-folder-reference-ko.md](D:/project/openclaude/docs/openclaude-src-folder-reference-ko.md)
 3. [index-ko.md](D:/project/openclaude/docs/src-folders/index-ko.md)
 4. [index-ko.md](D:/project/openclaude/docs/src-subfolders/index-ko.md)
-5. [openclaude-memory-context-compaction-ko.md](D:/project/openclaude/docs/openclaude-memory-context-compaction-ko.md)
-6. [openclaude-qa-test-cases-ko.md](D:/project/openclaude/docs/openclaude-qa-test-cases-ko.md)
-7. [openclaude-qa-test-cases-import-ko.csv](D:/project/openclaude/docs/openclaude-qa-test-cases-import-ko.csv)
-8. [openclaude-troubleshooting-guide-ko.md](D:/project/openclaude/docs/openclaude-troubleshooting-guide-ko.md)
+5. [openclaude-permission-security-matrix-ko.md](D:/project/openclaude/docs/openclaude-permission-security-matrix-ko.md)
+6. [openclaude-command-cookbook-ko.md](D:/project/openclaude/docs/openclaude-command-cookbook-ko.md)
+7. [openclaude-memory-context-compaction-ko.md](D:/project/openclaude/docs/openclaude-memory-context-compaction-ko.md)
+8. [openclaude-qa-test-cases-ko.md](D:/project/openclaude/docs/openclaude-qa-test-cases-ko.md)
+9. [openclaude-qa-test-cases-import-ko.csv](D:/project/openclaude/docs/openclaude-qa-test-cases-import-ko.csv)
+10. [openclaude-troubleshooting-guide-ko.md](D:/project/openclaude/docs/openclaude-troubleshooting-guide-ko.md)
 
 ### 3.5 운영 / 고객지원
 
@@ -91,6 +102,9 @@
 2. [openclaude-operations-manual-ko.md](D:/project/openclaude/docs/openclaude-operations-manual-ko.md)
 3. [openclaude-functional-spec-ko.md](D:/project/openclaude/docs/openclaude-functional-spec-ko.md)
 4. [openclaude-api-integration-spec-ko.md](D:/project/openclaude/docs/openclaude-api-integration-spec-ko.md)
+5. [openclaude-env-settings-reference-ko.md](D:/project/openclaude/docs/openclaude-env-settings-reference-ko.md)
+6. [openclaude-command-cookbook-ko.md](D:/project/openclaude/docs/openclaude-command-cookbook-ko.md)
+7. [openclaude-permission-security-matrix-ko.md](D:/project/openclaude/docs/openclaude-permission-security-matrix-ko.md)
 
 ## 4. 문서 간 관계
 
@@ -117,6 +131,9 @@
 - build-time feature gate와 open build stub 정책이 바뀌면 [openclaude-feature-flag-build-guide-ko.md](D:/project/openclaude/docs/openclaude-feature-flag-build-guide-ko.md)를 갱신합니다.
 - bridge 구조, `remote-control` standalone/REPL 흐름, env-based vs env-less 경로가 바뀌면 [openclaude-remote-control-bridge-guide-ko.md](D:/project/openclaude/docs/openclaude-remote-control-bridge-guide-ko.md)를 갱신합니다.
 - provider별 인증 우선순위, OAuth/API key 선택 규칙, Codex/GitHub credential 해석이 바뀌면 [openclaude-auth-credential-guide-ko.md](D:/project/openclaude/docs/openclaude-auth-credential-guide-ko.md)를 갱신합니다.
+- settings 소스 우선순위, `settings.json` 상위 키, 운영용 환경변수 기준이 바뀌면 [openclaude-env-settings-reference-ko.md](D:/project/openclaude/docs/openclaude-env-settings-reference-ko.md)를 갱신합니다.
+- REPL slash command, CLI flag, subcommand, feature-gated 명령 노출 규칙이 바뀌면 [openclaude-command-cookbook-ko.md](D:/project/openclaude/docs/openclaude-command-cookbook-ko.md)를 갱신합니다.
+- 권한 모드, safety check, 위험 경로 보호, 관리형 권한 정책이 바뀌면 [openclaude-permission-security-matrix-ko.md](D:/project/openclaude/docs/openclaude-permission-security-matrix-ko.md)를 갱신합니다.
 - 플러그인 구조, manifest 스키마, 훅 실행 규칙이 바뀌면 [openclaude-plugin-hook-guide-ko.md](D:/project/openclaude/docs/openclaude-plugin-hook-guide-ko.md)를 갱신합니다.
 - 메모리, 세션 유지, compact, resume 구조가 바뀌면 [openclaude-memory-context-compaction-ko.md](D:/project/openclaude/docs/openclaude-memory-context-compaction-ko.md)를 갱신합니다.
 - 빌드/인증/네트워크/remote-control/server 장애 분류 기준이 바뀌면 [openclaude-troubleshooting-guide-ko.md](D:/project/openclaude/docs/openclaude-troubleshooting-guide-ko.md)를 갱신합니다.
@@ -136,3 +153,6 @@
 | API 계약 변경 | API/연동 명세, 기능 명세서 |
 | 운영 절차 변경 | 운영 매뉴얼, 기능 명세서 |
 | 내부 아키텍처 리팩토링 | 코딩 에이전트 아키텍처 명세, 흐름/보안 명세 |
+| 설정/환경변수 우선순위 변경 | 환경변수 / 설정 키 레퍼런스, 인증 / 자격증명 가이드 |
+| 명령 표면 변경 | 명령어 실전 가이드, 트러블슈팅 가이드 |
+| 권한 모드 또는 민감 경로 정책 변경 | 권한 / 보안 매트릭스, 운영 매뉴얼 |
