@@ -16,6 +16,10 @@
 | `commands/services/tools/utils` 하위 폴더 문서 인덱스 | [index-ko.md](D:/project/openclaude/docs/src-subfolders/index-ko.md) | 개발, AI 엔지니어, 플랫폼 엔지니어, QA | `commands`, `services`, `tools`, `utils` 하위 폴더별 상세 문서 진입점 |
 | API 가이드 | [openclaude-api-guide-ko.md](D:/project/openclaude/docs/openclaude-api-guide-ko.md) | 개발, AI 엔지니어, 플랫폼 엔지니어, QA | provider 선택, 요청 변환, 스트리밍, 재시도, files/session API를 소스 기준으로 정리 |
 | 서버 기동 가이드 | [openclaude-server-mode-guide-ko.md](D:/project/openclaude/docs/openclaude-server-mode-guide-ko.md) | 개발, 플랫폼 엔지니어, DevOps, QA | direct connect 서버 기동 방법, 연결 방식, remote-control과의 차이, 보안 주의사항 정리 |
+| Feature Flag / 빌드 가이드 | [openclaude-feature-flag-build-guide-ko.md](D:/project/openclaude/docs/openclaude-feature-flag-build-guide-ko.md) | 개발, AI 엔지니어, 플랫폼 엔지니어, DevOps | 오픈 빌드에서 feature gate가 어떻게 제거되는지, 내부 기능과 공개 기능이 어떻게 갈리는지 정리 |
+| Remote Control / Bridge 가이드 | [openclaude-remote-control-bridge-guide-ko.md](D:/project/openclaude/docs/openclaude-remote-control-bridge-guide-ko.md) | 개발, 플랫폼 엔지니어, DevOps, QA | remote-control 구조, standalone/REPL 경로, bridge 세션 API, server와의 차이 정리 |
+| 인증 / 자격증명 가이드 | [openclaude-auth-credential-guide-ko.md](D:/project/openclaude/docs/openclaude-auth-credential-guide-ko.md) | 개발, AI 엔지니어, 플랫폼 엔지니어, 운영 | provider별 인증 소스, OAuth/API key 우선순위, auth.json/secure storage 동작 정리 |
+| 트러블슈팅 가이드 | [openclaude-troubleshooting-guide-ko.md](D:/project/openclaude/docs/openclaude-troubleshooting-guide-ko.md) | 개발, QA, 운영, DevOps | 빌드/인증/네트워크/remote-control/server 증상을 기준으로 빠른 대응 경로 정리 |
 | 플러그인 및 훅 추가 가이드 | [openclaude-plugin-hook-guide-ko.md](D:/project/openclaude/docs/openclaude-plugin-hook-guide-ko.md) | 개발, AI 엔지니어, 플랫폼 엔지니어, QA | 플러그인 구조, 훅 실행 방식, 추가 절차, 디버깅 포인트를 소스 기준으로 정리 |
 | 메모리/컨텍스트 압축 상세 설계 | [openclaude-memory-context-compaction-ko.md](D:/project/openclaude/docs/openclaude-memory-context-compaction-ko.md) | 개발, AI 엔지니어, 플랫폼 엔지니어, QA | 메모리 계층, session memory, compact, resume 복원 구조 파악 |
 | 코딩 에이전트 아키텍처 명세 | [coding-agent-architecture-spec-ko.md](D:/project/openclaude/docs/coding-agent-architecture-spec-ko.md) | 개발, AI 엔지니어, 플랫폼 엔지니어 | 코딩 에이전트 공통 구조와 내부 모듈 설계 기준 |
@@ -44,10 +48,14 @@
 5. [index-ko.md](D:/project/openclaude/docs/src-subfolders/index-ko.md)
 6. [openclaude-api-guide-ko.md](D:/project/openclaude/docs/openclaude-api-guide-ko.md)
 7. [openclaude-server-mode-guide-ko.md](D:/project/openclaude/docs/openclaude-server-mode-guide-ko.md)
-8. [openclaude-plugin-hook-guide-ko.md](D:/project/openclaude/docs/openclaude-plugin-hook-guide-ko.md)
-9. [openclaude-memory-context-compaction-ko.md](D:/project/openclaude/docs/openclaude-memory-context-compaction-ko.md)
-10. [openclaude-functional-spec-ko.md](D:/project/openclaude/docs/openclaude-functional-spec-ko.md)
-11. [openclaude-api-integration-spec-ko.md](D:/project/openclaude/docs/openclaude-api-integration-spec-ko.md)
+8. [openclaude-feature-flag-build-guide-ko.md](D:/project/openclaude/docs/openclaude-feature-flag-build-guide-ko.md)
+9. [openclaude-auth-credential-guide-ko.md](D:/project/openclaude/docs/openclaude-auth-credential-guide-ko.md)
+10. [openclaude-remote-control-bridge-guide-ko.md](D:/project/openclaude/docs/openclaude-remote-control-bridge-guide-ko.md)
+11. [openclaude-plugin-hook-guide-ko.md](D:/project/openclaude/docs/openclaude-plugin-hook-guide-ko.md)
+12. [openclaude-memory-context-compaction-ko.md](D:/project/openclaude/docs/openclaude-memory-context-compaction-ko.md)
+13. [openclaude-troubleshooting-guide-ko.md](D:/project/openclaude/docs/openclaude-troubleshooting-guide-ko.md)
+14. [openclaude-functional-spec-ko.md](D:/project/openclaude/docs/openclaude-functional-spec-ko.md)
+15. [openclaude-api-integration-spec-ko.md](D:/project/openclaude/docs/openclaude-api-integration-spec-ko.md)
 
 ### 3.3 AI 엔지니어 / 플랫폼 엔지니어
 
@@ -58,9 +66,13 @@
 5. [index-ko.md](D:/project/openclaude/docs/src-subfolders/index-ko.md)
 6. [openclaude-api-guide-ko.md](D:/project/openclaude/docs/openclaude-api-guide-ko.md)
 7. [openclaude-server-mode-guide-ko.md](D:/project/openclaude/docs/openclaude-server-mode-guide-ko.md)
-8. [openclaude-plugin-hook-guide-ko.md](D:/project/openclaude/docs/openclaude-plugin-hook-guide-ko.md)
-9. [openclaude-memory-context-compaction-ko.md](D:/project/openclaude/docs/openclaude-memory-context-compaction-ko.md)
-10. [openclaude-api-integration-spec-ko.md](D:/project/openclaude/docs/openclaude-api-integration-spec-ko.md)
+8. [openclaude-feature-flag-build-guide-ko.md](D:/project/openclaude/docs/openclaude-feature-flag-build-guide-ko.md)
+9. [openclaude-auth-credential-guide-ko.md](D:/project/openclaude/docs/openclaude-auth-credential-guide-ko.md)
+10. [openclaude-remote-control-bridge-guide-ko.md](D:/project/openclaude/docs/openclaude-remote-control-bridge-guide-ko.md)
+11. [openclaude-plugin-hook-guide-ko.md](D:/project/openclaude/docs/openclaude-plugin-hook-guide-ko.md)
+12. [openclaude-memory-context-compaction-ko.md](D:/project/openclaude/docs/openclaude-memory-context-compaction-ko.md)
+13. [openclaude-troubleshooting-guide-ko.md](D:/project/openclaude/docs/openclaude-troubleshooting-guide-ko.md)
+14. [openclaude-api-integration-spec-ko.md](D:/project/openclaude/docs/openclaude-api-integration-spec-ko.md)
 
 ### 3.4 QA
 
@@ -71,6 +83,7 @@
 5. [openclaude-memory-context-compaction-ko.md](D:/project/openclaude/docs/openclaude-memory-context-compaction-ko.md)
 6. [openclaude-qa-test-cases-ko.md](D:/project/openclaude/docs/openclaude-qa-test-cases-ko.md)
 7. [openclaude-qa-test-cases-import-ko.csv](D:/project/openclaude/docs/openclaude-qa-test-cases-import-ko.csv)
+8. [openclaude-troubleshooting-guide-ko.md](D:/project/openclaude/docs/openclaude-troubleshooting-guide-ko.md)
 
 ### 3.5 운영 / 고객지원
 
@@ -101,8 +114,12 @@
 - `commands`, `services`, `tools`, `utils` 하위 폴더 구조가 달라지면 [index-ko.md](D:/project/openclaude/docs/src-subfolders/index-ko.md)와 대응하는 `docs/src-subfolders/<group>/*.md`를 함께 갱신합니다.
 - provider 선택 규칙, shim 구조, bootstrap/files/session ingress 같은 API 구현 규칙이 바뀌면 [openclaude-api-guide-ko.md](D:/project/openclaude/docs/openclaude-api-guide-ko.md)를 갱신합니다.
 - direct connect server, `cc://` 연결 흐름, `remote-control` 구분 기준이 바뀌면 [openclaude-server-mode-guide-ko.md](D:/project/openclaude/docs/openclaude-server-mode-guide-ko.md)를 갱신합니다.
+- build-time feature gate와 open build stub 정책이 바뀌면 [openclaude-feature-flag-build-guide-ko.md](D:/project/openclaude/docs/openclaude-feature-flag-build-guide-ko.md)를 갱신합니다.
+- bridge 구조, `remote-control` standalone/REPL 흐름, env-based vs env-less 경로가 바뀌면 [openclaude-remote-control-bridge-guide-ko.md](D:/project/openclaude/docs/openclaude-remote-control-bridge-guide-ko.md)를 갱신합니다.
+- provider별 인증 우선순위, OAuth/API key 선택 규칙, Codex/GitHub credential 해석이 바뀌면 [openclaude-auth-credential-guide-ko.md](D:/project/openclaude/docs/openclaude-auth-credential-guide-ko.md)를 갱신합니다.
 - 플러그인 구조, manifest 스키마, 훅 실행 규칙이 바뀌면 [openclaude-plugin-hook-guide-ko.md](D:/project/openclaude/docs/openclaude-plugin-hook-guide-ko.md)를 갱신합니다.
 - 메모리, 세션 유지, compact, resume 구조가 바뀌면 [openclaude-memory-context-compaction-ko.md](D:/project/openclaude/docs/openclaude-memory-context-compaction-ko.md)를 갱신합니다.
+- 빌드/인증/네트워크/remote-control/server 장애 분류 기준이 바뀌면 [openclaude-troubleshooting-guide-ko.md](D:/project/openclaude/docs/openclaude-troubleshooting-guide-ko.md)를 갱신합니다.
 - 아키텍처나 실행 흐름이 바뀌면 코딩 에이전트 아키텍처/흐름 문서를 함께 갱신합니다.
 - UI 변경이 있으면 화면별 상세 기획서를 갱신합니다.
 - 운영 절차나 장애 대응 기준이 바뀌면 운영 매뉴얼을 갱신합니다.
